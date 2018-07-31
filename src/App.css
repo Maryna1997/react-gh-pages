@@ -1,28 +1,110 @@
-.App {
-  text-align: center;
+#wrapper {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 0;
+	margin-bottom: 0;
+	display: block;
+	float: left;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#tbl table {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #48aae6;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#tbl td{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #48aae6;
+	border: 1px #48aae6;
 }
 
-.App-title {
-  font-size: 1.5em;
+#tbl {
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 0;
+	top: 50px;
+	left: 50px;
+	float: left;
 }
 
-.App-intro {
-  font-size: large;
+#buttonAddCol {
+	display: block;
+	float: left;
+	margin-top: 3px;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	background: #f3a500;
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#buttonAddRow {
+	display: block;
+	clear: both;
+	margin-left: 3px;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	background: #f3a500;
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+}
+
+button.plus {
+	-webkit-transition: opacity 0.9s ease-in-out; 
+	-moz-transition: opacity 0.9s ease-in-out; 
+	-khtml-transition: opacity 0.9s ease-in-out; 
+	-o-transition: opacity 0.9s ease-in-out; 
+	-ms-transition: opacity 0.9s ease-in-out;  
+	transition: opacity 0.9s ease-in-out; 
+}
+
+button.minus {
+	display: block;
+	background: #b20000;
+	width: 50px;
+	height: 50px;
+	color: white;
+	border: 0px;
+	font-size: 18px;
+	
+	-webkit-transition: opacity 0.9s ease-in-out; 
+	-moz-transition: opacity 0.9s ease-in-out; 
+	-khtml-transition: opacity 0.9s ease-in-out; 
+	-o-transition: opacity 0.9s ease-in-out; 
+	-ms-transition: opacity 0.9s ease-in-out;  
+	transition: opacity 0.9s ease-in-out; 
+}
+
+button.plus:hover,
+button.minus:hover {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.9s ease-in-out; 
+	-moz-transition: opacity 0.9s ease-in-out; 
+	-khtml-transition: opacity 0.9s ease-in-out; 
+	-o-transition: opacity 0.9s ease-in-out; 
+	-ms-transition: opacity 0.9s ease-in-out;  
+	transition: opacity 0.9s ease-in-out; 
+}
+
+#remCol {
+	position: absolute;
+	top: 6px;
+	height: 55px;
+	margin-left:9px;	
+	
+}
+
+#remRow {
+	position: absolute;
+	left: 6px;
+	width: 55px;
+	margin-top:9px;
 }
